@@ -1,0 +1,27 @@
+uuid: 5d3e3f05-35d3-4bcd-a01b-9680bf0bcce8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sf3_file
+    - node.type.page
+  module:
+    - file
+id: node.page.field_sf3_file
+field_name: field_sf3_file
+entity_type: node
+bundle: page
+label: 'SF3 file'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: epds
+  file_extensions: 'txt pdf doc docx'
+  max_filesize: '100 MB'
+  description_field: false
+field_type: file
