@@ -756,6 +756,17 @@ $settings['entity_update_backup'] = TRUE;
  */
 $settings['migrate_node_migrate_type_classic'] = FALSE;
 
+/**
+ * S3fs settings
+ */
+$settings['s3fs.access_key'] = 'xxxx';
+$settings['s3fs.secret_key'] = 'xxxxx';
+$config['s3fs.settings']['bucket'] = 'xxxx';
+$config['s3fs.settings']['region'] = 'xxx';
+$settings['s3fs.use_s3_for_public'] = FALSE;
+$settings['s3fs.upload_as_private'] = TRUE;
+
+$settings['config_sync_directory'] = '../config/sync';
 // Automatically generated include for settings managed by ddev.
 if (file_exists(__DIR__ . '/settings.ddev.php') && getenv('IS_DDEV_PROJECT') == 'true') {
   include __DIR__ . '/settings.ddev.php';
